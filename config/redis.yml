@@ -1,2 +1,2 @@
-host: localhost
+host: rediscluster.ox7cer.0001.usw1.cache.amazonaws.com
 port: 6379
