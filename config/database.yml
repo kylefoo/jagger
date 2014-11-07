@@ -27,7 +27,7 @@ development:
   host: localhost
   port: 5432
   username: kylefoo
-  password: Foo010933
+  password: <%= ENV['JAGGER_DEV_DATABASE_PASSWORD'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: jagger_production
-  username: jagger
+  database: devdb.catetzdcv1ji.us-west-1.rds.amazonaws.com
+  username: awsuser
   password: <%= ENV['JAGGER_DATABASE_PASSWORD'] %>
