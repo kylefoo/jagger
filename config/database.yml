@@ -84,6 +84,8 @@ test:
 #
 production:
   <<: *default
-  database: devdb.catetzdcv1ji.us-west-1.rds.amazonaws.com
+  database: devdb
+  host: catetzdcv1ji.us-west-1.rds.amazonaws.com
+  port: 5432
   username: awsuser
   password: <%= ENV['JAGGER_DATABASE_PASSWORD'] %>
